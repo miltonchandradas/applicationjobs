@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_RAP_PRODUCTS'
+define service ZUI_RAP_PRODUCTS_O4 {
+  expose ZC_RAP_PRODUCTS;
+}

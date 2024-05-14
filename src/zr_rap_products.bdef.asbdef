@@ -1,0 +1,41 @@
+managed implementation in class ZBP_R_RAP_PRODUCTS unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZR_RAP_PRODUCTS
+persistent table zrap_products
+draft table ZRAP_PRODUCTS_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( readonly )
+   ID,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( numbering : managed )
+   ID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZRAP_PRODUCTS
+  {
+    ID = id;
+    Name = name;
+    Description = description;
+    Cost = cost;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+}
