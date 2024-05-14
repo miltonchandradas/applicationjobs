@@ -2,7 +2,7 @@ managed implementation in class ZBP_R_RAP_PRODUCTS unique;
 strict ( 2 );
 with draft;
 
-define behavior for ZR_RAP_PRODUCTS
+define behavior for ZR_RAP_PRODUCTS alias PRODUCTS
 persistent table zrap_products
 draft table ZRAP_PRODUCTS_D
 etag master LocalLastChangedAt

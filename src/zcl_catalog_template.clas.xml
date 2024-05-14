@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_PRODUCTS_BUSINESS_LOGIC</CLSNAME>
+    <CLSNAME>ZCL_CATALOG_TEMPLATE</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Business logic for Products</DESCRIPT>
+    <DESCRIPT>Create Job Catalog and Job Template</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
