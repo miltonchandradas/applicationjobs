@@ -1,15 +1,5 @@
-class ZBP_R_RAP_PRODUCTS definition
-  public
-  abstract
-  final
-  for behavior of ZR_RAP_PRODUCTS .
-
-public section.
-protected section.
-private section.
+CLASS zbp_r_rap_products DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zr_rap_products.
 ENDCLASS.
 
-
-
-CLASS ZBP_R_RAP_PRODUCTS IMPLEMENTATION.
+CLASS zbp_r_rap_products IMPLEMENTATION.
 ENDCLASS.

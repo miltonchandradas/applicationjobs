@@ -31,6 +31,7 @@ CLASS zcl_products_business_logic IMPLEMENTATION.
     " Getting the actual parameter values
     LOOP AT it_parameters INTO DATA(ls_parameter).
       CASE ls_parameter-selname .
+        WHEN 'P_INCREM'. p_increment = ls_parameter-low.
         WHEN 'P_INCREMENT'. p_increment = ls_parameter-low.
       ENDCASE.
     ENDLOOP.

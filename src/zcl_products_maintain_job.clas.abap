@@ -18,7 +18,7 @@ CLASS zcl_products_maintain_job IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
 
-    DATA lv_job_text TYPE cl_apj_rt_api=>ty_job_text VALUE 'Products JOB TEMPLATE V3'.
+    DATA lv_job_text TYPE cl_apj_rt_api=>ty_job_text VALUE 'PRODUCTS JOB TEMPLATE V5'.
 
     DATA lv_template_name TYPE cl_apj_rt_api=>ty_template_name.
 
@@ -40,7 +40,7 @@ CLASS zcl_products_maintain_job IMPLEMENTATION.
     DATA ls_ret TYPE bapiret2.
 
 * choose the name of the existing job template !
-    lv_template_name = 'ZPRODUCTS_TEMPLATE_V3'.
+    lv_template_name = 'ZPRODUCTS_TEMPLATE_V5'.
 
 * the immediate start can't be used when being called from within a RAP business object
 * because the underlying API performs an implicit COMMIT WORK.
@@ -69,7 +69,7 @@ CLASS zcl_products_maintain_job IMPLEMENTATION.
 * which are stored in the template
 * the field names in this program must match the field names of the template
 
-    ls_job_parameters-name = 'P_INCREMENT'.
+    ls_job_parameters-name = 'P_INCREM'.
 
     ls_value-sign = 'I'.
     ls_value-option = 'EQ'.
