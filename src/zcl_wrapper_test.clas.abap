@@ -19,6 +19,5 @@ CLASS zcl_wrapper_test IMPLEMENTATION.
 *    call function 'BAPI_FLIGHT_GETLIST'.
     DATA lv_email TYPE i_addressemailaddress_2-emailaddress.
     DATA lv_currency TYPE i_currency-currency.
-    CALL METHOD zcl_wrapper_bfgl_v1=>wrap_bapi_1.
   ENDMETHOD.
 ENDCLASS.
